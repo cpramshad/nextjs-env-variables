@@ -1,7 +1,23 @@
 .container {
   display: flex;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
 }
-.image-container {
-  border-radius: "5px";
-  overflow: "hidden";
+.imageContainer {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 282px;
+  height: 193px;
+  margin-right: 20px;
+}
+.descriptionContainer {
+  margin: 10px;
+  font-size: 20px;
+}
+.title {
+  font-size: 20px;
+}
+.subtitle {
+  font-size: 15px;
+  padding: 10px 0;
 }
