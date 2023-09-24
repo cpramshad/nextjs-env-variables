@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.details {
+  margin: 10px 0;
+}
+
+.button {
+  margin: 50px 0;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: lightblue;
+  font-size: 20px;
+}

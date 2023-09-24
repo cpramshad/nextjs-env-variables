@@ -1,3 +1,26 @@
-export const DPV = () => {
-  return <div>DPV</div>;
+import Image from "next/image";
+import styles from "./DPV.module.css";
+interface DPVProps {
+  id: string | number; // Depending on the nature of your ID, it could be string or number
+}
+export const DPV: React.FC<DPVProps> = ({ id }) => {
+  return (
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <h1>Listing Details</h1>
+      </div>
+      <div className={styles.content}>
+        <Image
+          alt="listing image"
+          src="/listing-image.png"
+          width={500}
+          height={500}
+        />
+        <div className={styles.details}>
+          <p>Details of the product</p>
+          <button className={styles.button}>Show phone number</button>
+        </div>
+      </div>
+    </div>
+  );
 };
