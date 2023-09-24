@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { DPV } from "../components/DPV/DPV";
+import { DPV } from "../../components/DPV/DPV";
 import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });

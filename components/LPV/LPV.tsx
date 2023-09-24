@@ -4,7 +4,11 @@ import { Listing } from "../Listing/Listing";
 import styles from "./LPV.module.css";
 
 export const LPV = () => {
-  const listingCount = 5;
+  console.log("****process.env", process.env.NEXT_PUBLIC_LISTING_COUNT);
+  const listingCount = parseInt(
+    process.env.NEXT_PUBLIC_LISTING_COUNT || "5",
+    10
+  );
   return (
     <div>
       <div className={styles.header}>
