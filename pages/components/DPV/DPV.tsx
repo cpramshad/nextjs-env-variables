@@ -22,6 +22,7 @@ export const DPV: React.FC<DPVProps> = ({ id }) => {
         />
         <div className={styles.details}>
           <p>Details of the product</p>
+          <button className={styles.button}>Show phone number</button>
         </div>
       </div>
     </div>
