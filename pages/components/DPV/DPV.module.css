@@ -4,7 +4,7 @@
 }
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 50px 0;
 }
 
@@ -24,4 +24,13 @@
   border-radius: 5px;
   background-color: lightblue;
   font-size: 20px;
+}
+
+.backBtn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightblue;
+  font-size: 20px;
+  margin-right: 35%;
+  width: 10%;
 }
