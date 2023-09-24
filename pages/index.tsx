@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.center}>
           <h1>Home page</h1>
+          <Link href={"/lpv"}>Show Listings - LPV</Link>
         </div>
       </main>
     </>

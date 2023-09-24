@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Listing } from "../Listing/Listing";
 import styles from "./LPV.module.css";
 
@@ -6,8 +7,11 @@ export const LPV = () => {
   const listingCount = 5;
   return (
     <div>
-      <div className={styles.center}>
-        <h1>Listings</h1>
+      <div className={styles.header}>
+        <button className={styles.backBtn}>
+          <Link href={"/"}>{`< Back`}</Link>
+        </button>
+        <h1>Listing</h1>
       </div>
       {Array.from({ length: listingCount }).map((_, index) => (
         <Listing
