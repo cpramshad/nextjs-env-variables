@@ -2,10 +2,13 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { DPV } from "../components/DPV/DPV";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function DPVHome() {
+  const router = useRouter();
+  const { id } = router.query;
   return (
     <>
       <Head>
@@ -15,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <DPV />
+        <DPV id={id} />
       </main>
     </>
   );
