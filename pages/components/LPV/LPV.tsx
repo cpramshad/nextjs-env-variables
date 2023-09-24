@@ -6,7 +6,9 @@ export const LPV = () => {
   const listingCount = 5;
   return (
     <div>
-      <div className={styles.center}>Listings</div>
+      <div className={styles.center}>
+        <h1>Listings</h1>
+      </div>
       {Array.from({ length: listingCount }).map((_, index) => (
         <Listing
           key={index}
