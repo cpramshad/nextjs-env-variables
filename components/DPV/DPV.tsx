@@ -5,6 +5,7 @@ interface DPVProps {
   id: any; // Depending on the nature of your ID, it could be string or number
 }
 export const DPV: React.FC<DPVProps> = ({ id }) => {
+  const showPhoneNumber = true;
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -22,7 +23,9 @@ export const DPV: React.FC<DPVProps> = ({ id }) => {
         />
         <div className={styles.details}>
           <p>Details of the product</p>
-          <button className={styles.button}>Show phone number</button>
+          {showPhoneNumber && (
+            <button className={styles.button}>Show phone number</button>
+          )}
         </div>
       </div>
     </div>
